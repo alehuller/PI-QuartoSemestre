@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página do Administrador</title>
+    <link rel="stylesheet" type="text/css" href="stylePaginaOrganizacao.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <span>CRUD de Usuários</span>
+            <button onClick="openModal()" id="new">Incluir</button>
+        </div>
+
+        <div class="divTable">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Nome:</th>
+                        <th>Email:</th>
+                        <th>Status:</th>
+                        <th>Grupo:</th>
+                        <th class="acao">Editar</th>
+                        <th class="acao">Excluir</th>
+                    </tr>
+                </thead>
+                <tbody>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="modal-container">
+            <div class="modal">
+                <form>
+                    <label for="m-nome">Nome</label>
+                    <input id="m-nome" type="text" required />
+
+                    <label for="m-email">Email</label>
+                    <input id="m-email" type="email" required />
+
+                    <label for="m-status">Status</label>
+                    <input id="m-status" type="text" required />
+
+                    <label for="m-grupo">Grupo</label>
+                    <input id="m-grupo" type="text" required />
+
+                    <button id="btnSalvar">Salvar</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
