@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Página do Administrador</title>
     <link rel="stylesheet" type="text/css" href="stylePaginaOrganizacao.css">
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
 </head>
 <body>
     <div class="container">
@@ -19,6 +20,7 @@
                 <thead>
                     <tr>
                         <th>Nome:</th>
+                        <th>CPF:</th>
                         <th>Email:</th>
                         <th>Status:</th>
                         <th>Grupo:</th>
@@ -37,10 +39,19 @@
                     <label for="m-nome">Nome</label>
                     <input id="m-nome" type="text" required />
 
+                    <label for="m-senha">Senha</label>
+                    <input id="m-senha" type="password" required />
+
+                    <label for="m-senhaConfirm">Senha Confirmação</label>
+                    <input id="m-senhaConfirm" type="password" required />
+
+                    <label for="m-cpf">CPF</label>
+                    <input id="m-cpf" type="text" required />
+
                     <label for="m-email">Email</label>
                     <input id="m-email" type="email" required />
 
-                    <label for="m-status">Status</label>
+                    <label for="m-status">Status:</label>
                     <input id="m-status" type="text" required />
 
                     <label for="m-grupo">Grupo</label>
@@ -51,5 +62,6 @@
             </div>
         </div>
     </div>
+    <script src="scriptPaginaOrganizacao.js"></script>
 </body>
 </html>

@@ -11,7 +11,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: rgba(0,0,0,0.1);
+    background-color: rgba(51, 224, 17, 0.1);
 }
   
 button {
@@ -22,7 +22,7 @@ button {
     width: 90%;
     height: 80%;
     border-radius: 10px;
-    background: white;
+    background: rgb(216, 182, 130);
 }
   
 .header {
@@ -73,7 +73,7 @@ table {
 }
   
 thead {
-    background-color: whitesmoke;
+    background-color: rgb(216, 182, 130);
 }
   
 tr {
@@ -158,7 +158,7 @@ tbody tr td.acao {
     flex-direction: column;
     align-items: center;
     padding: 40px;
-    background-color: white;
+    background-color: rgb(165, 206, 127);
     border-radius: 10px;
     width: 50%;
 }
@@ -187,8 +187,8 @@ tbody tr td.acao {
     padding: 5px 10px; 
     width: 100%;
     border: none;
-    background-color: rgb(57, 57, 226);
-    color: white;
+    background-color: rgb(216, 165, 89);
+    color: black;
 }
   
 .active {
@@ -222,4 +222,5 @@ tbody tr td.acao {
   
   td button i:first-child {
     margin-right: 10px;
-  }
+}
+
