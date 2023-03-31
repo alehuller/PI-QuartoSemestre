@@ -55,7 +55,6 @@ function insertItem(item, index) { //funcao onde junta e insere os atributos do 
       <td>${item.quantidade}</td>
       <td>${item.preco}</td>
       <td>${item.status} <input id="alterarStatus" type="button" onclick="alterar()" value="Alterar" /></td>
-      <td>${item.link}</td>
       <td class="acao">
         <button onclick="editItem(${index})"><i class='bx bx-edit' ></i></button> 
       </td>
