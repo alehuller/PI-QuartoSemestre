@@ -22,20 +22,21 @@
                         <th>Data:</th>
                         <th>Valor total:</th>
                         <th>Status:</th>
-                        <th class="acao">Detalhe</th>
+                        <th class="acao">Editar</th>
                     </tr>
                 </thead>
                 <tbody>
                     <td>123</td>
                     <td>12/05/23</td>
                     <td>R$3899,96</td>
-                    <td>Em separação</td>
+                    <td id="statusPedido">Pedido recebido</td>
                     <td class="acao">
-                    <a href="paginaResumoPedido.html"><button><i class='bx bx-edit' ></i></button></a>
+                    <button onclick="alterarTexto()">Alterar Status</button>
                     </td>
                 </tbody>
             </table>
         </div>
     </div>
+    <script src="scriptPaginaListaDeProdutos.js"></script>
 </body>
 </html>
