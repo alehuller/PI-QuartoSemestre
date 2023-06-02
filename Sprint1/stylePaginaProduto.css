@@ -1,20 +1,20 @@
-body{
+body {
     background-color: rgb(165, 206, 127);
 }
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: sans-serif;
 }
 
-header{
+header {
     display: flex;
     flex-direction: column;
 }
 
-.menu{
+.menu {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -22,27 +22,27 @@ header{
     height: 85px;
 }
 
-.left-side-menu{
+.left-side-menu {
     display: flex;
     gap: 50px;
 }
 
-.logo{
+.logo {
     display: flex;
     align-items: center;
 }
 
-.logo i{
+.logo i {
     color: hsl(26, 100%, 55%);
     font-size: 20px;
 }
 
-nav ul li{
+nav ul li {
     display: inline-block;
     margin-right: 30px;
 }
 
-nav ul li a{
+nav ul li a {
     color: #444;
     font-weight: bold;
     text-transform: uppercase;
@@ -52,28 +52,28 @@ nav ul li a{
 }
 
 nav ul li a:hover,
-nav ul li.active a{
+nav ul li.active a {
     color: hsl(26, 100%, 55%);
 }
 
-.right-side-menu{
+.right-side-menu {
     display: flex;
     align-items: center;
     gap: 20px;
 }
 
-.icon-avatar img{
+.icon-avatar img {
     width: 40px;
 }
 
-.line{
+.line {
     height: 1px;
     background-color: hsl(26, 100%, 55%);
     width: 90%;
     align-self: center;
 }
 
-.container{
+.container {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -82,80 +82,80 @@ nav ul li.active a{
     gap: 100px;
 }
 
-.left-side{
+.left-side {
     display: flex;
     flex-direction: column;
     width: 100%;
 }
 
-.items{
+.items {
     align-self: flex-end;
 }
 
-.select-image{
+.select-image {
     max-width: 400px;
 }
 
-.select-image img{
+.select-image img {
     width: 100%;
     border-radius: 10px;
 }
 
-.thumbnails{
+.thumbnails {
     display: flex;
     justify-content: space-evenly;
     max-width: 400px;
     gap: 10px;
 }
 
-.thumbnail img{
+.thumbnail img {
     width: 100%;
     border-radius: 10px;
 }
 
-.right-side{
+.right-side {
     width: 100%;
     display: flex;
     flex-direction: column;
 }
 
-.content{
+.content {
     max-width: 400px;
     display: flex;
     flex-direction: column;
     gap: 10px;
 }
 
-.right-side h6{
+.right-side h6 {
     color: hsl(26, 100%, 55%);
 }
 
-.right-side p{
+.right-side p {
     color: hsl(219, 9%, 45%);
     font-size: 14px;
 }
 
-.prices{
+.prices {
     display: flex;
     flex-direction: column;
 }
 
-.price{
+.price {
     font-size: 16px;
     font-weight: 700;
 }
 
-.off{
+.off {
     font-size: 12px;
     color: rgb(0, 119, 255);
 }
 
-.options{
+.options {
     display: flex;
     gap: 20px;
 }
 
-.amount{
+.amount {
     display: flex;
     align-items: center;
     gap: 30px;
@@ -165,16 +165,17 @@ nav ul li.active a{
     border-radius: 10px;
 }
 
-.amount span{
+.amount span {
     font-weight: 700;
     font-size: 12px;
 }
 
-.minus, .plus{
+.minus,
+.plus {
     cursor: pointer;
 }
 
-.button{
+.button {
     display: inline-block;
     text-decoration: none;
     color: #fff;
@@ -189,6 +190,6 @@ nav ul li.active a{
     font-weight: 700;
 }
 
-.button img{
+.button img {
     width: 14px;
 }

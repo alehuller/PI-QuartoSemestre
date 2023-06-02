@@ -1,20 +1,20 @@
-body{
+body {
     background-color: rgb(165, 206, 127);
 }
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: sans-serif;
 }
 
-header{
+header {
     display: flex;
     flex-direction: column;
 }
 
-.menu{
+.menu {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -22,27 +22,27 @@ header{
     height: 85px;
 }
 
-.left-side-menu{
+.left-side-menu {
     display: flex;
     gap: 50px;
 }
 
-.logo{
+.logo {
     display: flex;
     align-items: center;
 }
 
-.logo i{
+.logo i {
     color: hsl(26, 100%, 55%);
     font-size: 20px;
 }
 
-nav ul li{
+nav ul li {
     display: inline-block;
     margin-right: 30px;
 }
 
-nav ul li a{
+nav ul li a {
     color: #444;
     font-weight: bold;
     text-transform: uppercase;
@@ -52,21 +52,21 @@ nav ul li a{
 }
 
 nav ul li a:hover,
-nav ul li.active a{
+nav ul li.active a {
     color: hsl(26, 100%, 55%);
 }
 
-.right-side-menu{
+.right-side-menu {
     display: flex;
     align-items: center;
     gap: 20px;
 }
 
-.icon-avatar img{
+.icon-avatar img {
     width: 40px;
 }
 
-.line{
+.line {
     height: 1px;
     background-color: hsl(26, 100%, 55%);
     width: 90%;
