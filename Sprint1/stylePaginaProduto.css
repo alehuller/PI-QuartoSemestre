@@ -145,11 +145,6 @@ nav ul li.active a {
     font-weight: 700;
 }
 
-.off {
-    font-size: 12px;
-    color: rgb(0, 119, 255);
-}
-
 .options {
     display: flex;
     gap: 20px;
@@ -192,4 +187,14 @@ nav ul li.active a {
 
 .button img {
     width: 14px;
+}
+
+@media only screen and (max-width: 390px) {
+    .select-image img {
+        width: 225%;
+    }
+
+    .thumbnail img {
+        width: 275%;
+    }
 }
