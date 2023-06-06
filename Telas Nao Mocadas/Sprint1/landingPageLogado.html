@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page</title>
+    <link rel="stylesheet" href="styleLandingPageLogadoResponsivo.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <script async src="loja.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <nav>
+            <div class="logo">
+                <i class="fa-solid fa-store"></i>
+            </div>
+
+            <ul>
+                <li><a href="#">Tênis</a></li>
+                <li><a href="carrinhoClienteLogado.html"><img src="images/icon-cart.svg"></a></li>
+                <li><a href="alteracaoCliente.html" class="icon-avatar"><img src="images/foto.jpg"></a></li>
+            </ul>
+        </nav>
+
+        <div class="content">
+            <div class="div-text">
+                <span>PROMOÇÃO DO DIA</span>
+                <h3> <!-- Aqui é aonde vai o tênis que está em destaque/promoção --> </h3>
+                <h1>PODE SER TODO SEU!</h1>
+                <p> <!-- Detalhe do produto em destaque/promoção --> </p>
+            </div>
+
+            <div class="div-img">
+                <img id="big-img" src="" alt=""> <!-- Nesse src, é aonde iria a imagem do produto em destaque/promoção -->
+            </div>
+
+            <div class="small-img">
+                <img onclick="myTshirt(this.src)" src="" alt=""> <!-- Nesse src, é aonde iria a imagem de outros produtos -->
+                <img onclick="myTshirt(this.src)" src="" alt=""> <!-- Nesse src, é aonde iria a imagem de outros produtos -->
+                <img onclick="myTshirt(this.src)" src="" alt=""> <!-- Nesse src, é aonde iria a imagem de outros produtos -->
+            </div>
+        </div>
+
+        <section class="container normal-section">
+            <h1>ESTOQUE NOVOS</h1>
+            <div class="Container-roupas">
+                <div class="roupa">
+                    <img src="" alt="" class="product-image"> <!-- Nesse src, é aonde iria a imagem principal do produto -->
+                    <p class="product-title"> <!-- Aqui é aonde vai no nome do tênis --> </p>
+                    <div class="product-price-container">
+                        <h5 class="product-price"> <!-- Aqui é aonde vai o preço do tênis --> </h5>
+                        <ion-icon name="cart-outline"></ion-icon>
+                        <a href=""> <!-- Aqui é aonde vai a pagina de detalhe do produto -->
+                            <btn>Detalhe</btn>
+                        </a>
+                        <button type="button" class="button-hover-background">Adicionar ao carrinho</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Retirando o carrinho da Home <main class="main-section">
+            <section class="container normal-section">
+                <h2 class="section-title">Carrinho</h2>
+
+                <table class="cart-table">
+                    <thead>
+                        <tr>
+                            <th class="table-head-item first-col">Item</th>
+                            <th class="table-head-item second-col">Preço</th>
+                            <th class="table-head-item third-col">Quantidade</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                    </tbody>
+
+                    <tfoot>
+                        <tr>
+                            <td colspan="3" class="cart-total-container">
+                                <strong>Total</strong>
+                                <span>R$0,00</span>
+                            </td>
+                        </tr>
+                    </tfoot>
+                </table>
+
+                <a href="carrinhoClienteLogado.html"><button type="button" class="purchase-button">Finalizar
+                        Compra</button></a>
+            </section>
+        </main> -->
+    </div>
+</body>
+
+</html>
