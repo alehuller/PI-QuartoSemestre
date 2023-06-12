@@ -27,26 +27,10 @@ function openModal(edit = false, index = 0) { //funcao onde aparece a tela de in
   }
 
   if (edit) { //valores que sao editados na inclusao, cada novo com seu index
-    sCodigo.value = itens[index].codigo
-    sNome.value = itens[index].nome
-    sDescricao.value = itens[index].descricao
-    sAvaliacao.value = itens[index].avaliacao
-    sPreco.value = itens[index].preco
     sQuantidade.value = itens[index].quantidade
-    sStatus.value = itens[index].status
-    sLink.value = itens[index].link
-    sImagens.value = itens[index].imagens
     id = index
   } else { //valores nao preenchidos
-    sCodigo.value = ''
-    sNome.value = ''
-    sDescricao.value = ''
-    sAvaliacao.value = ''
-    sPreco.value = ''
     sQuantidade.value = ''
-    sStatus.value = ''
-    sLink.value = ''
-    sImagens.value = ''
   }
 
 }
@@ -71,7 +55,6 @@ function insertItem(item, index) { //funcao onde junta e insere os atributos do 
       <td>${item.quantidade}</td>
       <td>${item.preco}</td>
       <td>${item.status} <input id="alterarStatus" type="button" onclick="alterar()" value="Alterar" /></td>
-      <td><a href="${item.link}">${item.link}</a></td>
       <td class="acao">
         <button onclick="editItem(${index})"><i class='bx bx-edit' ></i></button> 
       </td>
@@ -81,7 +64,7 @@ function insertItem(item, index) { //funcao onde junta e insere os atributos do 
 
 btnSalvar.onclick = e => { //botao de salvar os dados da inclusao
 
-  if (sCodigo.value == '' || sNome.value == '' || sDescricao.value == '' || sAvaliacao.value == '' || sPreco.value == '' || sQuantidade.value == '' || sStatus.value == '' || sLink.value == '' || sImagens.value == '') { //valores do item
+  if (sQuantidade.value == '') { //valores do item
     return
   }
 
@@ -89,20 +72,12 @@ btnSalvar.onclick = e => { //botao de salvar os dados da inclusao
 
 
   if (id !== undefined) { //atribui os parametros passados para suas variaveis e id
-    itens[id].codigo = sCodigo.value
-    itens[id].nome = sNome.value
-    itens[id].descricao = sDescricao.value
-    itens[id].avaliacao = sAvaliacao.value
-    itens[id].preco = sPreco.value
     itens[id].quantidade = sQuantidade.value
-    itens[id].status = sStatus.value
-    itens[id].link = sLink.value
-    itens[id].imagens = sImagens.value
     for (let varFor = 0; varFor <= itemArray.length; i++) {
       itemArray[i] = sStatus.value;
     }
   } else {
-    itens.push({ 'codigo': sCodigo.value, 'nome': sNome.value, 'descricao': sDescricao.value, 'avaliacao': sAvaliacao.value, 'preco': sPreco.value, 'quantidade': sQuantidade.value, 'status': sStatus.value, 'link': sLink.value, 'imagens': sImagens.value })
+    itens.push({ 'quantidade': sQuantidade.value })
   }
 
   setItensBD() //seta os novos itens no banco de dados
@@ -137,15 +112,9 @@ function alterar() {
   }
 }
 
-document.getElementById("btnSalvar").addEventListener("click", function(e) {
-  e.preventDefault(); 
 
-  var input = document.getElementById("m-imagens");
-  var files = input.files;
-});
-
-const getItensBD = () => JSON.parse(localStorage.getItem('dbfuncc')) ?? [] //funcao que pega o item no banco local. o JSON.parse torna uma informacao em formato JSON em um objeto JavaScript
+/*const getItensBD = () => JSON.parse(localStorage.getItem('dbfuncc')) ?? [] //funcao que pega o item no banco local. o JSON.parse torna uma informacao em formato JSON em um objeto JavaScript
 const setItensBD = () => localStorage.setItem('dbfuncc', JSON.stringify(itens)) //seta os itens no banco local em JSON form
 
-loadItens()
+loadItens()*/
 
